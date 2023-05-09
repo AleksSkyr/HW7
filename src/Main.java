@@ -8,6 +8,7 @@ public class Main {
         tasc5();
         tasc6();
         tasc7();
+        tasc8();
 
     }
 
@@ -104,6 +105,16 @@ public class Main {
             if (dey == oneFraidey) {
                 oneFraidey = oneFraidey + 7;
                 System.out.println("Сегодня пятница, " + dey + "-е число. Необходимо подготовить отчет");
+            }
+        }
+    }
+    public static void tasc8() {
+        System.out.println("Задача 8");
+        int previousYear = 2023 - 200;
+        int nextYear = 2023 + 100;
+        for (int i = 0; i < nextYear; i += 79) {
+            if (i > previousYear) {
+                System.out.println("Годы прилёта кометы " + i);
             }
         }
     }
